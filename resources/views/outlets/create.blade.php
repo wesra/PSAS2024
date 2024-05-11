@@ -10,7 +10,7 @@
       
 <div class="container">
     <div class="card mt-5">
-        <h3 class="card-header p-3"><i class="fa-solid fa-user"></i> Tugas Mahendra Haris</h3>
+        <h3 class="card-header p-3"><i class="fa-solid fa-user"></i> Tugas Akbar Henritama</h3>
                     <div class="card-body">
                         <form action="{{ route('outlets.store') }}" method="POST" enctype="multipart/form-data">
                         

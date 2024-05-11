@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 11 Import Export Excel to Database</title>
+    <title>PSAS PROWEB 2024</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
@@ -9,9 +9,19 @@
       
 <div class="container">
     <div class="card mt-5">
-        <h3 class="card-header p-3"><i class="fa-solid fa-user"></i> Tugas Mahendra Haris</h3>
+        <h3 class="card-header p-3"><i class="fa-solid fa-user"></i> Tugas Akbar Henritama</h3>
         <div class="card-body">
-            <a href="{{ route('outlets.create') }}" class="btn"><i class="fa-solid fa-plus">Tambah</i></a>
+            <div style="position: absolute;
+            background-color:#87CEEB;
+            color: #fff;
+            border:none;
+            border-radius:0px;"style="position: absolute;
+                background-color:#87CEEB;
+                color: #fff;
+                border:none;
+                border-radius:0px;">
+            <a href="{{ route('outlets.create') }}" class="btn"><i class="fa-solid fa-plus">Tambah</i></a></div>
+            <br>
             <table class="table table-bordered mt-3">
                 <tr>
                     <th>ID</th>
@@ -36,10 +46,20 @@
                     <td>{{ $outlet->updated_at }}</td>
                     <td>
                         <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('outlets.destroy', $outlet->id) }}" method="POST">
-                            <a href="{{ route('outlets.edit', $outlet->id) }}" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                            
+                            <div style="
+                            background-color:green;
+                            color: #ffff;
+                            width:25px
+                            height:25px"><a href="{{ route('outlets.edit', $outlet->id) }}" class="btn"><i class="fa-solid fa-pen-to-square"></i></a></div>
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn"><i class="fa-solid fa-trash"></i></button>
+                            <div style="
+                            background-color:red;
+                            color: #ffff;
+                            width:25px
+                            height:25px">
+                            <button type="submit" class="btn"><i class="fa-solid fa-trash" st></i></button> </div>
                         </form>
                 </tr>
                 @endforeach
@@ -53,7 +73,7 @@
 <footer>
     <div class="container"
     style="text-align:center; background-color:azure">
-        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) by Mahendra Haris Web Programming 11
+        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) by Akbar Henritama Web Programming 11
     </div>
 </footer>
 </html>
