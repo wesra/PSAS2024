@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PSAS PROWEB 2024</title>
+    <title>PSAS Bradstern</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
@@ -9,7 +9,7 @@
       
 <div class="container">
     <div class="card mt-5">
-        <h3 class="card-header p-3"><i class="fa-solid fa-user"></i> Tugas Akbar Henritama</h3>
+        <h3 class="card-header p-3"><i class="fa-solid fa-user"></i> Tugas Bradstern</h3>
         <div class="card-body">
             <div style="position: absolute;
             background-color:#87CEEB;
@@ -73,7 +73,7 @@
 <footer>
     <div class="container"
     style="text-align:center; background-color:azure">
-        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) by Akbar Henritama Web Programming 11
+        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) 
     </div>
 </footer>
 </html>
